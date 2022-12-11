@@ -20,19 +20,16 @@
 .car-text
 {
   background-color: rgba(30,30,30,.5);
+  padding-top: 2px;
 }
 
 .car-text h1 {
-  margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
   color: #fff;
 }
 
 .car-text h2 {
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 50px;
   font-size: 24px;
 }
 
@@ -298,7 +295,6 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
 }
 
 #hero .container {
@@ -307,16 +303,12 @@ h6 {
 
 @media (max-width: 720px) {
   .car-text h1 {
-    margin: 0 0 10px 0;
     font-size: 24px;
-    font-weight: 700;
-    line-height: 56px;
     color: #fff;
   }
   
   .car-text h2 {
     color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 0 px;
     font-size: 12px;
   }
 }
