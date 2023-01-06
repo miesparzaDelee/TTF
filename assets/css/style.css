@@ -145,7 +145,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 0px 0px;
 }
 
 #header.header-scrolled,
@@ -157,7 +157,7 @@ h6 {
   font-family:'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
-  line-height: 3;
+  line-height: 2;
   letter-spacing: 0px;
 }
 
