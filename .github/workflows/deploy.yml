@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # Confirma que tu rama sea 'main'
+      - main
 
 jobs:
   web-deploy:
@@ -19,11 +19,15 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ./public_html/ 
-          # Excluye cosas de configuración que no sirven en la web
+          server-dir: ./public_html/
+          # Esta lista es vital para que no suba basura ni archivos de seguridad
           exclude: |
             **/.git*
+            **/.git*/**
             **/.github*
-            README.md
-            .gitignore
-            .vscode
+            **/.github*/**
+            **/.vscode*
+            **/.vscode*/**
+            **/README.md
+            **/.gitignore
+            **/.DS_Store
