@@ -3,6 +3,5 @@
 .vscode/
 *.swp
 
-# Si en el futuro usas typst y genera PDFs temporales que no quieres subir:
-# *.pdf 
-# (Pero por ahora NO pongas *.pdf si tú los generas manualmente y quieres subirlos)
+*.pdf
+*.svg 

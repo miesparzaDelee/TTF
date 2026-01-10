@@ -31,3 +31,4 @@ jobs:
             **/README.md
             **/.gitignore
             **/.DS_Store
+            **/src/**
